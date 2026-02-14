@@ -1,0 +1,24 @@
+{
+  "Auth": {
+    "signInTitle": "Criar Conta",
+    "emailLabel": "E-mail",
+    "passwordLabel": "Palavra-passe",
+    "confirmPasswordLabel": "Confirm Password",
+    "signInButton": "Registar Agora",
+    "loading": "A processar...",
+    "errors": {
+      "invalidEmail": "E-mail inválido",
+      "required": "Campo obrigatório",
+      "minPassword": "A palavra-passe deve ter pelo menos 6 caracteres",
+      "emailExists": "Este e-mail já está em uso",
+      "internalError": "Erro interno do servidor",
+      "passwordsMustMatch": "As palavras-passe não coincidem",
+      "needUppercase": "Deve conter uma letra maiúscula",
+      "needNumber": "Deve conter um número"
+    }
+  },
+  "HomePage": {
+    "title": "Bem-vindo ao Boilerplate!",
+    "description": "Configurado com Prisma e Docker."
+  }
+}
