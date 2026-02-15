@@ -1,11 +1,15 @@
-import {useTranslations} from 'next-intl';
+import SigninForm  from '@/components/auth/SigninForm';
+import SigninAction from '@/actions/auth/SigninAction';
 
-export default function HomePage() {
-  const t = useTranslations('HomePage');
+interface SignupProps {
+  params: Promise<{ locale: string }>;
+}
+
+export default async function SigninPage({ params }:SignupProps){
+  const {locale} = await params;
   return (
     <div>
-      <h1>{t('title')}</h1>
-      <p>{t('description')}</p>
+      <SigninForm onSubmit={SigninAction} />
     </div>
-  );
+  )
 }
